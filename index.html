@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+</head>
+<body>
+<script>
+let computerSelection;
+
+	function computerPlay() {
+		let myArray = ['rock', 'paper', 'scissors'];
+		let computerSelection = myArray[Math.floor(Math.random() * myArray.length)];
+		console.log(computerSelection);
+	}
+
+	let playerSelection = prompt("Choose either Rock, Paper or Scissors").toLowerCase
+	computerPlay();
+	
+	//function playRound() {
+		//if (playerSelection === "rock" && computerSelection === "rock") {
+		//	alert("It's a tie!")
+		//} else if (playerSelection === "rock" && computerSelection === "paper") {
+		//	alert("You lose! Paper beats Rock!")
+		//} else if (playerSelection === "rock" && computerSelection === "scissors") {
+		//	alert("You Win! Rock beats Scissors!") else if 
+		//}
+	//}
+	function playRound() {
+	switch (true) {
+		case playerSelection === computerSelection:
+			alert ("It's a tie!")
+			break;
+
+		case playerSelection === 'rock' && computerSelection === 'scissors':
+			alert("You win! Rock beats scissors!")
+			break;
+		default:
+			alert("Nothing");
+			console.log(computerSelection);
+
+	}
+}
+
+playRound();
+</script>
+</body>
+</html>
