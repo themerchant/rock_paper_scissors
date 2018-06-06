@@ -5,16 +5,15 @@
 </head>
 <body>
 <script>
-let computerSelection;
+let myArray = ['rock', 'paper', 'scissors'];
 
 	function computerPlay() {
-		let myArray = ['rock', 'paper', 'scissors'];
-		let computerSelection = myArray[Math.floor(Math.random() * myArray.length)];
+		computerSelection = myArray[Math.floor(Math.random() * myArray.length)];
 		console.log(computerSelection);
 	}
 
-	let playerSelection = prompt("Choose either Rock, Paper or Scissors").toLowerCase
-	computerPlay();
+let playerPrompt = prompt("Choose either Rock, Paper or Scissors")
+let playerSelection = playerPrompt.toLowerCase();
 	
 	//function playRound() {
 		//if (playerSelection === "rock" && computerSelection === "rock") {
@@ -27,20 +26,20 @@ let computerSelection;
 	//}
 	function playRound() {
 	switch (true) {
-		case playerSelection === computerSelection:
+		case playerSelection == computerSelection:
 			alert ("It's a tie!")
 			break;
 
-		case playerSelection === 'rock' && computerSelection === 'scissors':
+		case playerSelection == 'rock' && computerSelection === 'scissors':
 			alert("You win! Rock beats scissors!")
 			break;
 		default:
 			alert("Nothing");
-			console.log(computerSelection);
+			console.log(playerSelection);
 
 	}
 }
-
+computerPlay();
 playRound();
 </script>
 </body>
