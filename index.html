@@ -28,43 +28,43 @@ let pcScore = 0;
 	switch (true) {
 		case playerSelection === computerSelection:
 			alert ("It's a tie!");
-			alert("The score is " + score + " to you " + pcScore + "computer.")
+			alert("The score is " + score + " to you " + pcScore + " computer.")
 			break;
 
 		case playerSelection === 'rock' && computerSelection === 'scissors':
 			alert("You win! Rock beats scissors!");
 			score += 1;
-			alert("The score is " + score + " to you " + pcScore + "computer.")
+			alert("The score is " + score + " to you " + pcScore + " computer.")
 			break;
 
 		case playerSelection === 'rock' && computerSelection === 'paper':
 			alert("You lose! Paper beats rock!");
 			pcScore += 1;
-			alert("The score is " + score + " to you " + pcScore + "computer.")
+			alert("The score is " + score + " to you " + pcScore + " computer.")
 			break;
 
 		case playerSelection === 'paper' && computerSelection === 'scissors':
 			alert("You lose! Scissors beats paper!");
 			pcScore += 1;
-			alert("The score is " + score + " to you " + pcScore + "computer.")
+			alert("The score is " + score + " to you " + pcScore + " computer.")
 			break;
 
 		case playerSelection === 'paper' && computerSelection === 'rock':
 			alert("You win! Paper beats rock!");
 			score += 1;
-			alert("The score is " + score + " to you " + pcScore + "computer.")
+			alert("The score is " + score + " to you " + pcScore + " computer.")
 			break;
 
 		case playerSelection === 'scissors' && computerSelection === 'paper':
 			alert("You win! Scissors beats paper!");
 			score += 1;
-			alert("The score is " + score + " to you " + pcScore + "computer.")
+			alert("The score is " + score + " to you " + pcScore + " computer.")
 			break;
 
 		case playerSelection === 'scissors' && computerSelection === 'rock':
 			alert("You lose! Rock beats scissors!");
 			pcScore += 1;
-			alert("The score is " + score + " to you " + pcScore + "computer.")
+			alert("The score is " + score + " to you " + pcScore + " computer.")
 			break;
 
 		default:
@@ -96,11 +96,11 @@ let pcScore = 0;
 		playRound();
 
 		if (score > pcScore) {
-			alert("You win the game with a final score of " + score + "to you and " + pcScore + "to the computer!")
+			alert("You win the game with a final score of " + score + " to you and " + pcScore + " to the computer!")
 		} else if (score < pcScore) {
-			alert("You lose the game with a final score of " + score + "to you and " + pcScore + "to the computer!")
+			alert("You lose the game with a final score of " + score + " to you and " + pcScore + " to the computer!")
 		} else {
-			alert("It's a tie with a score of " + score + "each! Try playing again.")
+			alert("It's a tie with a score of " + score + " each! Try playing again.")
 		}
 	}
 
